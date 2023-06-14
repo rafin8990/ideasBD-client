@@ -18,7 +18,7 @@ const Navbar = () => {
               <label tabIndex={0} className="text-white cursor-pointer w-full">Browse Journal</label>
                 <ul
                 tabIndex={0}
-                className="dropdown-content menu mt-5 text-black shadow  rounded-box w-52">
+                className="dropdown-content menu mt-5 text-black shadow bg-white  rounded-box w-52">
                 <li> <Link> s </Link> </li>
                 <li> <Link> s </Link> </li>
               </ul>
