@@ -2,6 +2,7 @@ import React from "react";
 import RightLinks from "./RightLinks";
 import CallforPapers from "./CallforPapers";
 import CurrentIssue from "../CurrentIssue";
+import Articles from "./Articles";
 
 const Content = () => {
   return (
@@ -10,7 +11,8 @@ const Content = () => {
         <div className="border">
           <img src="https://i.ibb.co/Vq9qLfQ/Untitled-design.png" alt="" />
           <CallforPapers></CallforPapers>
-          <CurrentIssue></CurrentIssue>
+          <CurrentIssue></CurrentIssue> 
+          <Articles></Articles>
         </div>
 
 
