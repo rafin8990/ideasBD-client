@@ -1,8 +1,9 @@
 import React from "react";
 import RightLinks from "./RightLinks";
 import CallforPapers from "./CallforPapers";
-import CurrentIssue from "../CurrentIssue";
 import Articles from "./Articles";
+import CurrentIssue from "./CurrentIssue";
+import MoreDetails from "./MoreDetails";
 
 const Content = () => {
   return (
@@ -13,6 +14,7 @@ const Content = () => {
           <CallforPapers></CallforPapers>
           <CurrentIssue></CurrentIssue> 
           <Articles></Articles>
+          <MoreDetails></MoreDetails>
         </div>
 
 
