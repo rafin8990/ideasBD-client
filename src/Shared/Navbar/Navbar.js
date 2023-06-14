@@ -4,68 +4,41 @@ import Container from "../Container/Container";
 
 const Navbar = () => {
   return (
-    <nav className="bg-blue-800 text-white text-center md:text-left px-20 pt-32 pb-2">
-      <Container>
-        <Link className="text-3xl cursor-pointer ">
+    <nav className="bg-[#2804F9] text-white text-left sm:text-center w-full md:text-left px-10 md:px-20 pt-32 pb-2">
+      <div className="max-w-[1500px] mx-auto">
+      <Link className="text-3xl cursor-pointer">
           Bangladesh Journal of Multidisciplinary Scientific Research
         </Link>
-        <div className=" md:flex  items-center">
-          <div className="w-full flex flex-wrap justify-between  text-black mt-6">
+        <div className=" lg:flex items-center uppercase w-full">
+          <div className="w-full  grid  grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7  mt-6 gap-4">
+            <Link className="hover:underline underline-offset-2 w-full">Home</Link>
+            <Link className="hover:underline underline-offset-2 w-full">login</Link>
+            <Link className="hover:underline underline-offset-2 w-full">Register</Link>
             
-            <Link className="hover:underline underline-offset-2   bg-green-100">
-              Home
-            </Link>
-            <Link className="hover:underline underline-offset-2   bg-green-100">
-              Home
-            </Link>
-            <Link className="hover:underline underline-offset-2   bg-green-100">
-              Home
-            </Link>
             <div className="dropdown dropdown-hover">
-              <label tabIndex={0} className="text-white">
-                Hover
-              </label>
-              <ul
+              <label tabIndex={0} className="text-white cursor-pointer w-full">Browse Journal</label>
+                <ul
                 tabIndex={0}
-                className="dropdown-content menu mt-5  shadow bg-base-100 rounded-box w-52">
-                <li>
-                  <Link>s</Link>
-                </li>
-                <li>
-                  <Link>s</Link>
-                </li>
-                <li>
-                  <Link>s</Link>
-                </li>
+                className="dropdown-content menu mt-5 text-black shadow  rounded-box w-52">
+                <li> <Link> s </Link> </li>
+                <li> <Link> s </Link> </li>
               </ul>
             </div>
-            <Link className="hover:underline underline-offset-2   bg-green-100">
-              Home
-            </Link>
-            <Link className="hover:underline underline-offset-2   bg-green-100">
-              Home
-            </Link>
-            <Link className="hover:underline underline-offset-2   bg-green-100">
-              Home
-            </Link>
-            <Link className="hover:underline underline-offset-2   bg-green-100">
-              Home
-            </Link>
+            <Link className="hover:underline underline-offset-2 w-full">Submission</Link>
+            <Link className="hover:underline underline-offset-2 w-full">editorial teams</Link>
+            <Link className="hover:underline underline-offset-2 w-full">article processing charge</Link>
           </div>
-          <div className="input-group-sm block mx-5">
+          <div className="input-group-sm  mx-5 mt-5 text-center">
             <input
               type="search"
               id="search"
-              className=""
-              name="Password"
-              placeholder=""
-            />
-            <span className="btn btn-ghost absolute  rounded-3xl">
-              kichu ekta
-            </span>
+              className=" w-full"/>
+            <button className=" lg:absolute lg:ms-4 w-full lg:w-0 mx-auto hover:underline">
+              search
+            </button>
           </div>
         </div>
-      </Container>
+      </div>
     </nav>
   );
 };
