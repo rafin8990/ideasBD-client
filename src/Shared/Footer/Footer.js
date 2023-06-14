@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="w-full flex justify-end lg:pr-20">
+        <div className="lg:w-[1000px] flex justify-end lg:pr-20">
             <img
               className="h-60"
               src="https://i.ibb.co/zNfXcSZ/Platform-workflow-by-OJSPKP.png"
