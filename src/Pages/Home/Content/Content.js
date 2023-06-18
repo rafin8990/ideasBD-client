@@ -20,7 +20,6 @@ const Content = () => {
 
 
         <div>
-          <RightLinks></RightLinks>
         </div>
       </div>
     </div>

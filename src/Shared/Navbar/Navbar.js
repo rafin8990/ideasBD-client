@@ -25,9 +25,9 @@ const Navbar = () => {
             </div>
             <Link className="hover:underline underline-offset-2 w-full">Submission</Link>
             <Link className="hover:underline underline-offset-2 w-full">editorial teams</Link>
-            <Link className="hover:underline underline-offset-2 w-full">article processing charge</Link>
+            <Link to={'https://deparment-of-english-city-university-bd.vercel.app/ideas'} className="hover:underline underline-offset-2 w-full">Ideas</Link>
           </div>
-          <div className="input-group-sm  mx-5 mt-5 text-center">
+        {/*   <div className="input-group-sm  mx-5 mt-5 text-center">
             <input
               type="search"
               id="search"
@@ -35,7 +35,7 @@ const Navbar = () => {
             <button className=" lg:absolute lg:ms-4 w-full lg:w-0 mx-auto hover:underline">
               search
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
