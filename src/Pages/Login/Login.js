@@ -1,16 +1,40 @@
 import React from "react";
 import RightLinks from "../Home/Content/RightLinks";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const { register, handleSubmit, formState: { errors },} = useForm();
+  const onSubmit = (data) => handleLogin(data);
+
+
+
+  const { signInUser } = useAuth()
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const from = location.state?.from?.pathname || "/"
+
+  const handleLogin = event => {
+    event.preventDefault()
+    const form = event.target
+    const email = form.email.value
+    const password = form.password.value
+   
+    console.log(email, password)
+    signInUser(email, password)
+        .then(result => {
+            const user = result.user;
+            console.log(user)
+            alert('loggedin')
+            navigate(from, { replace : true })
+        })
+        .catch((error) => {
+            console.log(error)
+        });
+}
+
   return (
     <div>
       <div className="lg:flex justify-center max-w-[1500px] mx-auto  w-full md:text-left ">

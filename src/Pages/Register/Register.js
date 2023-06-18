@@ -1,16 +1,57 @@
 import React from "react";
 import RightLinks from "../Home/Content/RightLinks";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import useAuth from "../../hooks/useAuth";
 
 const Register = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+    const { register,handleSubmit,reset,
+        formState: { errors } } = useForm();
+
+    const navigate = useNavigate()
+
+    const { createUser, updateUserProfile, logOut } = useAuth()
+
+    const onSubmit = data => {
+        console.log(data)
+        createUser(data.email, data.password, data.PhotoUrl)
+            .then(result => {
+                const loggedUser = result.user
+
+                updateUserProfile(data.name, data.PhotoUrl)
+                    .then(() => {
+                        const savedUser = { email: data.email, name: data.name }
+                        fetch('http://localhost:2222/users', {
+                            method: 'POST',
+                            headers: {
+                                'content-type': 'application/json'
+                            },
+                            body: JSON.stringify(savedUser)
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                if (data.insertedId) {
+                                    console.log('updated profile')
+                                    reset()
+                                    logOut()
+                                        .then(() => {
+                                            navigate('/login')
+                                        })
+                                }
+                            })
+
+                            .catch(error => console.log(error))
+
+                    })
+                    .catch((error) => {
+                        console.log(error)
+                    });
+            })
+
+    };
+
+
+  
   return (
     <div>
       <div className="lg:flex justify-center max-w-[1500px] mx-auto  w-full md:text-left ">
