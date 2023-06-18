@@ -10,9 +10,16 @@ const Navbar = () => {
         </Link>
         <div className=" lg:flex items-center uppercase w-full">
           <div className="w-full  grid  grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7  mt-6 gap-4">
-            <Link className="hover:underline underline-offset-2 w-full">Home</Link>
-            <Link className="hover:underline underline-offset-2 w-full">login</Link>
-            <Link className="hover:underline underline-offset-2 w-full">Register</Link>
+            <Link 
+            className="hover:underline underline-offset-2 w-full">Home</Link>
+            
+            <Link 
+            to='/login'  
+            className="hover:underline underline-offset-2 w-full">login</Link>
+            
+            <Link 
+            to='/register' 
+            className="hover:underline underline-offset-2 w-full">Register</Link>
             
             <div className="dropdown dropdown-hover">
               <label tabIndex={0} className="text-white cursor-pointer w-full">Browse Journal</label>

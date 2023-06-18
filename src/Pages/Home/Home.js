@@ -9,6 +9,7 @@ const Home = () => {
         <div className="md:w-2/3">
           <Content></Content>
         </div>
+        
         <div className="md:w-1/3">
           <RightLinks></RightLinks>
         </div>
