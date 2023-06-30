@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="lg:w-[1000px] flex justify-end lg:pr-20">
             <img
               className="h-60"
-              src="https://i.ibb.co/zNfXcSZ/Platform-workflow-by-OJSPKP.png"
+              src="https://i.ibb.co/ZzLBBrL/Studio-prev-ui.png"
               alt=""/>
         </div>
       </footer>

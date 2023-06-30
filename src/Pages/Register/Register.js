@@ -5,8 +5,7 @@ import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 
 const Register = () => {
-    const { register,handleSubmit,reset,
-        formState: { errors } } = useForm();
+    const { register,handleSubmit,reset, formState: { errors } } = useForm();
 
     const navigate = useNavigate()
 
@@ -14,39 +13,8 @@ const Register = () => {
 
     const onSubmit = data => {
         console.log(data)
-        createUser(data.email, data.password, data.PhotoUrl)
-            .then(result => {
-                const loggedUser = result.user
-
-                updateUserProfile(data.name, data.PhotoUrl)
-                    .then(() => {
-                        const savedUser = { email: data.email, name: data.name }
-                        fetch('http://localhost:2222/users', {
-                            method: 'POST',
-                            headers: {
-                                'content-type': 'application/json'
-                            },
-                            body: JSON.stringify(savedUser)
-                        })
-                            .then(res => res.json())
-                            .then(data => {
-                                if (data.insertedId) {
-                                    console.log('updated profile')
-                                    reset()
-                                    logOut()
-                                        .then(() => {
-                                            navigate('/login')
-                                        })
-                                }
-                            })
-
-                            .catch(error => console.log(error))
-
-                    })
-                    .catch((error) => {
-                        console.log(error)
-                    });
-            })
+        // reset()
+        
 
     };
 
@@ -82,7 +50,7 @@ const Register = () => {
               <div className="flex flex-col">
                 <label htmlFor="FirstName">First Name*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="text"
                   placeholder="FirstName"
                   {...register("FirstName", { required: true })}
@@ -92,7 +60,7 @@ const Register = () => {
               <div className="flex flex-col">
                 <label htmlFor="Middlename">Middle Name</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="text"
                   placeholder="Middlename"
                   {...register("Middlename", { required: true })}
@@ -102,7 +70,7 @@ const Register = () => {
               <div className="flex flex-col">
                 <label htmlFor="Lastname">Last Name*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="text"
                   placeholder="Lastname"
                   {...register("Lastname", { required: true })}
@@ -112,7 +80,7 @@ const Register = () => {
               <div className="flex flex-col">
                 <label htmlFor="Affiliation">Affiliation*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="text"
                   placeholder="Affiliation"
                   {...register("Affiliation", { required: true })}
@@ -121,7 +89,7 @@ const Register = () => {
               {/*  */}
               <div className="flex flex-col "> 
               <label htmlFor="country">Country*</label>
-                <select className="w-[50%] bg-blue-100 p-2 rounded-md" {...register("Title", { required: true })}>
+                <select className="lg:w-[50%] bg-blue-100 p-2 rounded-md" {...register("Country", { required: true })}>
                   <option value="Mr">Mr</option>
                   <option value="Mrs">Mrs</option>
                   <option value="Miss">Miss</option>
@@ -133,7 +101,7 @@ const Register = () => {
               <div className="flex flex-col">
                 <label htmlFor="email">Email*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="email"
                   placeholder="email"
                   {...register("email", { required: true })}/>
@@ -142,7 +110,7 @@ const Register = () => {
               <div className="flex flex-col">
                 <label htmlFor="email">Username*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="username"
                   placeholder="username"
                   {...register("username", { required: true })}/>
@@ -152,7 +120,7 @@ const Register = () => {
               <div className="flex flex-col gap-2">
                 <label htmlFor="username">Password*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="password"
                   placeholder="password"
                   {...register("password", { required: true })}
@@ -163,18 +131,18 @@ const Register = () => {
               <div className="flex flex-col gap-2">
                 <label htmlFor="username">Repeat Password*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="password"
-                  placeholder="password"
-                  {...register("password", { required: true })}
+                  placeholder="Password"
+                  {...register("checkPassword", { required: true })}
                 />
               </div>
 
-              <div className="w-[50%] flex justify-center gap-10">
+              <div className="lg:w-[50%] flex justify-center gap-10">
                 <Link 
                 to='/login'
                 className="btn-link">Login</Link>
-                <button
+                <button 
                   className="text-blue-800 font-bold border border-gray-400  rounded-sm  bg-gradient-to-tr    from-slate-200 to-gray-200 px-3 py-1 w-15"
                   type="submit" >
                   Register

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#2804F9] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left px-32 md:px-20 pt-32 pb-2 flex">
+    <nav className="bg-[#2804F9] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left  md:px-20 pt-32 pb-2 flex">
       <img 
-      className="w-20"
+      className=" h-10 mt-2 lg:h-20" 
         src="https://i.ibb.co/Fq9bGw3/355053833-273800408518610-3244941835535842613-n.jpg"
         alt=""
       />

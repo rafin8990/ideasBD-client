@@ -9,9 +9,9 @@ const CurrentIssue = () => {
         ----Vol 7 No 1 (2023): January-June----
       </p>
 
-      <div className="sm:flex justify-left mx-10 mt-5">
-        <div className="card card-side  md:w-[600px] lg:w-[700px] ">
-          <img className="w-[75%]" src="https://i.ibb.co/T2pw6kx/Untitled-design-1.png" alt="" />
+      <div className="sm:flex justify-center  mt-5">
+        <div className="card lg:card-side  md:w-[600px] lg:w-[700px] ">
+          <img className="w-[75%] mx-auto" src="https://i.ibb.co/T2pw6kx/Untitled-design-1.png" alt="" />
           <div className="text-left mx-5 mt-5 leading-10">
             <p className="font-bold">General information of BHMSR</p>
             <p className="font-bold">Editor-in-Cheif : <Link className="font-light text-lg btn-link hover:text-indigo-300">ekta bedar nam</Link> </p>

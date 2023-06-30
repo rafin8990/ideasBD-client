@@ -52,7 +52,7 @@ const Login = () => {
               <div className="flex flex-col">
                 <label htmlFor="username">Username*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="text"
                   placeholder="username"
                   {...register("username", { required: true })}
@@ -62,7 +62,7 @@ const Login = () => {
               <div className="flex flex-col gap-2">
                 <label htmlFor="username">Password*</label>
                 <input
-                  className="w-[50%] bg-blue-100 p-2 rounded-md"
+                  className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="password"
                   placeholder="password"
                   {...register("password", { required: true })}
