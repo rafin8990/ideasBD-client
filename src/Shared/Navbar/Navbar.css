@@ -1,0 +1,30 @@
+.nav_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 3px;
+    margin-right: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #2213c7;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .nav_button:hover {
+    background-color: #1068bb;
+    border-color: #1976D2;
+    color: #fff;
+  }
+  
+  .nav_button:focus-within {
+    background-color: #1976D2;
+    border-color: #1976D2;
+  }
