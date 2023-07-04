@@ -8,7 +8,7 @@ const Navbar = () => {
       {/* img  */}
       <div className="bg-[#2804F9] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left  md:px-20 pt-10 lg:pt-32 pb-2 flex">
         <img
-          className="h-16 ms-10 lg:h-32 "
+          className="h-16 ms-10 lg:h-32 mr-10 lg:mr-0"
           src="https://i.ibb.co/Fq9bGw3/355053833-273800408518610-3244941835535842613-n.jpg"
           alt=""
         />
@@ -23,9 +23,9 @@ const Navbar = () => {
       </div>
 
       {/* Links */}
-      <div className="lg:ms-10 mr-10 w-full text-center flex items-center">
+      <div className="lg:ms-10 mr-10 w-full text-center flex items-center mb-10">
         <div className="lg:flex items-center uppercase max-w-[1500px] mx-auto">
-          <div className="w-full  grid  grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7  mt-6 gap-4">
+          <div className="w-full  grid  grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7  mt-6 gap-4">
             <Link className="hover:underline underline-offset-2 w-full nav_button ">
               Ideas
             </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className="dropdown dropdown-hover">
               <label
                 tabIndex={0}
-                className="text-white cursor-pointer w-full nav_button"
+                className="text-white cursor-pointer w-full h-full nav_button"
               >
                 Submission
               </label>
@@ -69,9 +69,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="hover:underline underline-offset-2">
-                    {" "}
-                    About The Journal{" "}
+                  <Link to='https://deparment-of-english-city-university-bd.vercel.app/' className="hover:underline underline-offset-2">
+                    About The Journal
                   </Link>
                 </li>
               </ul>
