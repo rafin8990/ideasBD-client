@@ -12,7 +12,14 @@ const Register = () => {
     const { createUser, updateUserProfile, logOut } = useAuth()
 
     const onSubmit = data => {
-        console.log(data)
+        // console.log(data)
+        createUser(data.email, data.password) 
+        .then(result=>{
+          const loggedUser = result.user 
+          console.log(loggedUser);
+        })
+       
+        
         // reset()
         
 
@@ -38,8 +45,7 @@ const Register = () => {
               border-gray-400  rounded-sm 
                 bg-gradient-to-tr 
               from-slate-200 to-gray-200     
-                px-3 py-1 w-15"
-              >
+                px-3 py-1 w-15">
                 Create or Connect your ORCID iD
               </Link>
             </div>
@@ -47,6 +53,7 @@ const Register = () => {
               className="mt-20 flex flex-col gap-7"
               onSubmit={handleSubmit(onSubmit)}>
               <p className="text-xl font-bold">Profile</p>
+          
               <div className="flex flex-col">
                 <label htmlFor="FirstName">First Name*</label>
                 <input
@@ -90,10 +97,10 @@ const Register = () => {
               <div className="flex flex-col "> 
               <label htmlFor="country">Country*</label>
                 <select className="lg:w-[50%] bg-blue-100 p-2 rounded-md" {...register("Country", { required: true })}>
-                  <option value="Mr">Mr</option>
-                  <option value="Mrs">Mrs</option>
-                  <option value="Miss">Miss</option>
-                  <option value="Dr">Dr</option>
+                  <option value="Mr">Bangladesh</option>
+                  <option value="Mrs">India</option>
+                  <option value="Miss">Indoneshia</option>
+                  <option value="Dr">America</option>
                 </select>
               </div>
               {/*  */}
@@ -108,7 +115,7 @@ const Register = () => {
               </div>
               {/*  */}
               <div className="flex flex-col">
-                <label htmlFor="email">Username*</label>
+                <label htmlFor="username">Username*</label>
                 <input
                   className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="username"
@@ -118,7 +125,7 @@ const Register = () => {
            
               {/*  */}
               <div className="flex flex-col gap-2">
-                <label htmlFor="username">Password*</label>
+                <label htmlFor="password">Password*</label>
                 <input
                   className="lg:w-[50%] bg-blue-100 p-2 rounded-md"
                   type="password"

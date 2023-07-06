@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       {/* img  */}
-      <div className="bg-[#2804F9] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left  md:px-20 pt-10 lg:pt-32 pb-2 flex">
+      <div className="bg-[#800000] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left  md:px-20 pt-10 lg:py-20 pb-2 flex">
         <img
           className="h-16 ms-10 lg:h-32 mr-10 lg:mr-0"
           src="https://i.ibb.co/Fq9bGw3/355053833-273800408518610-3244941835535842613-n.jpg"
@@ -14,9 +14,9 @@ const Navbar = () => {
         />
         <div className="max-w-[1500px]  lg:text-center mx-auto">
           <Link className=" font-semibold  cursor-pointer">
-            <p className="text-3xl lg:text-5xl">I D E A S</p>
-            <p className="lg:text-3xl">
-              International Journal of Arts Science And Culture
+            <p className="text-3xl lg:text-7xl font">I D E A S</p>
+            <p className="lg:text-3xl font">
+              International Journal of Literature Arts Science And Culture
             </p>
           </Link>
         </div>
@@ -31,16 +31,45 @@ const Navbar = () => {
             </Link>
 
             <Link className="hover:underline underline-offset-2 nav_button">
-              Institutions of advance studies
+              Institute of advance studies
             </Link>
-            <Link
-              to={
-                "https://deparment-of-english-city-university-bd.vercel.app/ideas"
-              }
-              className="hover:underline underline-offset-2  nav_button"
-            >
-              Rahman M. Mahbub
-            </Link>
+            {/* Rahman M Mahbub start  */}
+            <div className="dropdown dropdown-hover">
+            <label
+                tabIndex={0}
+                className="text-white cursor-pointer w-full h-full nav_button"
+              >
+                Rahman M. Mahbub
+              </label>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu mt-5 text-black shadow bg-white  rounded-box w-52 "
+              >
+                <li>
+                  <Link
+                    to="/profile"
+                    className="hover:underline underline-offset-2 w-full "
+                  >
+                    Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/research"
+                    className="hover:underline underline-offset-2 w-full "
+                  >
+                    Research & Publication
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/books">
+                    Books
+                  </Link>
+                </li>
+              </ul>
+
+            </div>
+            {/* End of the Section  */}
             <div className="dropdown dropdown-hover">
               <label
                 tabIndex={0}
@@ -48,6 +77,7 @@ const Navbar = () => {
               >
                 Submission
               </label>
+
               <ul
                 tabIndex={0}
                 className="dropdown-content menu mt-5 text-black shadow bg-white  rounded-box w-52 "
