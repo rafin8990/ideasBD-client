@@ -211,9 +211,7 @@ const AboutTheJournal = () => {
             </div>
           </div>
           {/* links */}
-          <div className="lg:w-1/3">
-            <RightLinks></RightLinks>
-          </div>
+
         </div>
       </div>
     </div>

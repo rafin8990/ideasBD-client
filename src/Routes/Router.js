@@ -7,6 +7,7 @@ import Submission from "../Pages/Submission/Submission";
 import AboutTheJournal from "../Pages/Home/Content/RightLinksContent/AboutTheJournal";
 import AimsAndScopes from "../Pages/Home/Content/RightLinksContent/AimsAndScopes";
 import Reviewprocess from "../Pages/Home/Content/RightLinksContent/Reviewprocess";
+import Profile from "../Pages/RahmanMMahbub/Profile/Profile";
 
 export const router = createBrowserRouter([
     {
@@ -37,10 +38,15 @@ export const router = createBrowserRouter([
                 path:'reviewprocess',
                 element: <Reviewprocess></Reviewprocess> 
             },
+            {
+                path:'/profile',
+                element:<Profile></Profile>
+            }
         ])
     },
     {
         path:'/submission',
         element: <Submission></Submission>
     }
+    
 ])

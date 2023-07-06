@@ -9,7 +9,7 @@
     color: #fff;
     text-decoration: none;
     vertical-align: middle;
-    background-color: #2213c7;
+    background-color: #800000;
     border: 1px solid transparent;
     border-radius: 2px;
     cursor: pointer;
@@ -17,12 +17,10 @@
   }
   
   .nav_button:hover {
-    background-color: #1068bb;
-    border-color: #1976D2;
+    background-color: #800025;
     color: #fff;
   }
   
   .nav_button:focus-within {
-    background-color: #1976D2;
-    border-color: #1976D2;
+    background-color: #800000;
   }

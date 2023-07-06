@@ -11,7 +11,7 @@ const CurrentIssue = () => {
 
       <div className="sm:flex justify-center  mt-5">
         <div className="card lg:card-side  md:w-[600px] lg:w-[700px] ">
-          <img className="w-[75%] mx-auto" src="https://i.ibb.co/T2pw6kx/Untitled-design-1.png" alt="" />
+          <img className="w-[75%] mx-auto" src="https://scontent.fdac8-1.fna.fbcdn.net/v/t39.30808-6/307701104_104601192442484_5954819400782476445_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5cd70e&_nc_eui2=AeF8z9fl_iNkweCVewHuxpauz1UcZPZFRMfPVRxk9kVEx-HEasoj__GYFSmR7RiXZM6u1A2HikStUpGi23SO7NF4&_nc_ohc=BEYkalwl8sIAX9D52fK&_nc_ht=scontent.fdac8-1.fna&oh=00_AfAGG5-hCwjtMm-NZh0ztzHlCi5s0QunIeV2vJ9BJFvEqg&oe=64A9C099" alt="" />
           <div className="text-left mx-5 mt-5 leading-10">
             <p className="font-bold">General information of BHMSR</p>
             <p className="font-bold">Editor-in-Cheif : <Link className="font-light text-lg btn-link hover:text-indigo-300">ekta bedar nam</Link> </p>
