@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       {/* img  */}
-      <div className="bg-[#800000] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left  md:px-20 pt-10 lg:py-20 pb-2 flex">
+      <div className="bg-[#800000] text-white text-left sm:text-center max-w- mx-auto md:text-left  md:px-20 pt-10 lg:py-20 pb-2 flex">
         <img
           className="h-16 ms-10 lg:h-32 mr-10 lg:mr-0"
           src="https://i.ibb.co/Fq9bGw3/355053833-273800408518610-3244941835535842613-n.jpg"
@@ -35,7 +35,7 @@ const Navbar = () => {
             </Link>
             {/* Rahman M Mahbub start  */}
             <div className="dropdown dropdown-hover">
-            <label
+              <label
                 tabIndex={0}
                 className="text-white cursor-pointer w-full h-full nav_button"
               >
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/profile"
-                    className="hover:underline underline-offset-2 w-full "
+                    className="hover:underline underline-offset-2 nav_button mt-2 ml-2"
                   >
                     Profile
                   </Link>
@@ -56,20 +56,70 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/research"
-                    className="hover:underline underline-offset-2 w-full "
+                    className="hover:underline underline-offset-2 nav_button mt-2 ml-2 "
                   >
                     Research & Publication
                   </Link>
                 </li>
                 <li>
-                  <Link to="/books">
+                  <Link
+                    className="hover:underline underline-offset-2 nav_button mt-2 ml-2 "
+                    to="/books"
+                  >
                     Books
                   </Link>
                 </li>
               </ul>
-
             </div>
             {/* End of the Section  */}
+
+            {/* start new  */}
+            <div className="dropdown dropdown-hover">
+              <label
+                tabIndex={0}
+                className="text-white cursor-pointer w-full h-full nav_button"
+              >
+                Volume
+              </label>
+
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu mt-5 text-black shadow bg-white  rounded-box w-52 "
+              >
+                <li>
+                  <Link
+                    to="/volume5"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.5
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume6"
+                    className="hover:underline underline-offset-2 nav_button mt-2 "
+                  >
+                    Vol.6
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume7"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.7
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume8"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.8
+                  </Link>
+                </li>
+              </ul>
+            </div>
             <div className="dropdown dropdown-hover">
               <label
                 tabIndex={0}
@@ -85,7 +135,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/login"
-                    className="hover:underline underline-offset-2 w-full "
+                    className="hover:underline underline-offset-2 nav_button mt-2 "
                   >
                     login
                   </Link>
@@ -93,13 +143,16 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/register"
-                    className="hover:underline underline-offset-2 w-full "
+                    className="hover:underline underline-offset-2 nav_button mt-2 "
                   >
                     Register
                   </Link>
                 </li>
                 <li>
-                  <Link to='https://deparment-of-english-city-university-bd.vercel.app/' className="hover:underline underline-offset-2">
+                  <Link
+                    to="https://deparment-of-english-city-university-bd.vercel.app/"
+                    className="hover:underline underline-offset-2 nav_button mt-2 "
+                  >
                     About The Journal
                   </Link>
                 </li>
@@ -113,11 +166,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-/* 
-<a href="#_" class="inline-flex items-center w-full px-5 py-3 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700">
-Button Text
-<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-</a>
- 
- */

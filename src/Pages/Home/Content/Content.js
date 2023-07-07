@@ -2,6 +2,8 @@ import React from "react";
 import CurrentIssue from "./CurrentIssue";
 import AboutTheJournal from "./RightLinksContent/AboutTheJournal";
 import CallforPapers from "./CallforPapers";
+import Volume8 from "../../Volume8/Volume8";
+import EditorInChief from "../../../Extra/EditorInChief";
 
 const Content = () => {
   return (
@@ -10,8 +12,12 @@ const Content = () => {
         <div className="border">
           <img src="https://i.ibb.co/W20NzQs/5D-48370.jpg" alt="" />
           <CallforPapers></CallforPapers>
-          <CurrentIssue></CurrentIssue>
-          <AboutTheJournal></AboutTheJournal>
+          <div className="my-5">
+            <h1 className="text-4xl font text-center  my-10">Current Issue</h1>
+            <p className="text-center">--------------</p>
+            <Volume8></Volume8>
+          </div>
+          <EditorInChief></EditorInChief>
         </div>
       </div>
     </div>
