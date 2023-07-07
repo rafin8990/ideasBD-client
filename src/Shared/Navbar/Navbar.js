@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       {/* img  */}
-      <div className="bg-[#800000] text-white text-left sm:text-center max-w- mx-auto md:text-left  md:px-20 pt-10 lg:py-20 pb-2 flex">
+      <div className="bg-[#800000] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left  md:px-20 pt-10 lg:py-20 pb-2 flex">
         <img
           className="h-16 ms-10 lg:h-32 mr-10 lg:mr-0"
           src="https://i.ibb.co/Fq9bGw3/355053833-273800408518610-3244941835535842613-n.jpg"
@@ -72,8 +72,6 @@ const Navbar = () => {
               </ul>
             </div>
             {/* End of the Section  */}
-
-            {/* start new  */}
             <div className="dropdown dropdown-hover">
               <label
                 tabIndex={0}
@@ -158,6 +156,8 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
+
+            {/* start new  */}
           </div>
         </div>
       </div>
