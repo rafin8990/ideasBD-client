@@ -1,10 +1,10 @@
 import React from "react";
-import RightLinks from "./RightLinks";
-import CallforPapers from "./CallforPapers";
-import Articles from "./Articles";
 import CurrentIssue from "./CurrentIssue";
-import MoreDetails from "./MoreDetails";
 import AboutTheJournal from "./RightLinksContent/AboutTheJournal";
+import CallforPapers from "./CallforPapers";
+import Volume8 from "../../Volume8/Volume8";
+import EditorInChief from "../../../Extra/EditorInChief";
+import ImageSlider from "./ImageSlider";
 
 const Content = () => {
   return (
@@ -12,17 +12,19 @@ const Content = () => {
       <div className="lg:flex">
         <div className="border">
           <img src="https://i.ibb.co/W20NzQs/5D-48370.jpg" alt="" />
-
           <CallforPapers></CallforPapers>
-          <CurrentIssue></CurrentIssue> 
-          <AboutTheJournal></AboutTheJournal>
-          <Articles></Articles>
-          <MoreDetails></MoreDetails>
-        </div>
-
-
-
-        <div>
+          <EditorInChief></EditorInChief>
+          <div className="my-5">
+            <h1 className="text-4xl font text-center  my-10">Current Issue</h1>
+            <p className="text-center">--------------</p>
+            <Volume8></Volume8>
+            <div>
+              <h1 className="text-4xl font  font-bold text-center my-20">
+                IDEAS VOLUMES
+              </h1>
+              <ImageSlider></ImageSlider>
+            </div>
+          </div>
         </div>
       </div>
     </div>

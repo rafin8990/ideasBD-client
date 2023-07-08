@@ -1,40 +1,58 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="mx-auto">
-      <footer className="footer pt-40  p-10 bg-base-200  text-base-content flex flex-col justify-center items-center text-left">
-        <div>
-          <div className="flex ">
-            <img
-              className="h-12 "
-              src="https://i.ibb.co/2PZYvD4/image.png"
-              alt=""
-            />
-            <p className="font-bold text-lg  ">
-              CRIBFB is licensed under a Creative Commons Attribution 4.0
-              International License.
-            </p>
-          </div>
-          <p className="w-[80%] italic ">
-            To make sure that you can receive messages from us, please add the
-            <a className="text-blue-500" href="'https://www.cribfb.com'">
-              {" "}
-              'https://www.cribfb.com'
-            </a>{" "}
-            domain to your e-mail 'safe list'. If you do not receive e-mail in
-            your 'inbox', check your 'bulk mail' or 'junk mail' folders.
+    <footer className="footer p-10 bg-base-200 text-base-content">
+      <div>
+        <div className="">
+          <img
+            className="h-60"
+            src="https://i.ibb.co/6Hc6Q03/20230708-132718-0000.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <span className="footer-title">Contact</span>
+        <p>Email: ideas.bangladesh@gmail.com</p>
+        <p>Cell No of Ideas: +8801878677729</p>
+      </div>
+      <div>
+        <span className="footer-title">Correspondence</span>
+        <p className="">
+          <span className=" link link-hover">
+            <Link to="https://rb.gy/c51nr">
+              IDEAS FACEBOOK GROUP
+              <FaFacebook></FaFacebook>
+            </Link>
+          </span>
+        </p>
+        <p className="">
+          <span className=" link link-hover">
+            <Link to="https://www.facebook.com/ideas.researchjournal">
+              IDEAS FACEBOOK PAGE
+              <FaFacebook></FaFacebook>
+            </Link>
+          </span>
+          <p className="link link-hover mt-2">
+            <Link to="/excutive">Excutive Editor</Link>
           </p>
-        </div>
-
-        <div className="lg:w-[1000px] flex justify-end lg:pr-20">
-            <img
-              className="h-60"
-              src="https://i.ibb.co/ZzLBBrL/Studio-prev-ui.png"
-              alt=""/>
-        </div>
-      </footer>
-    </div>
+        </p>
+        <Link>
+          <p className="link link-hover">Academia ID: Academia.edu</p>
+        </Link>
+      </div>
+      <div>
+        <span className="footer-title">Rahman M Mahbub</span>
+        <p className="text-4xl">
+          <Link to="https://rb.gy/7duec">
+            <FaFacebook></FaFacebook>
+          </Link>
+        </p>
+      </div>
+    </footer>
   );
 };
 

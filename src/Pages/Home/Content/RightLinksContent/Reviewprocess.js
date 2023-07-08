@@ -23,7 +23,13 @@ const Reviewprocess = () => {
               <p className="font-bold">
                 Reviewers’ Responsibilities <br />
               </p>
-            <Link className="w-[60%] bg-green-100 wrap" to='http://publicationethics.org/files/u7140/Peer%20review%20guidelines.pdf'> (http://publicationethics.org/files/u7140/Peer%20review%20guidelines.pdf)</Link>
+              <Link
+                className="w-[60%] bg-green-100 wrap"
+                to="http://publicationethics.org/files/u7140/Peer%20review%20guidelines.pdf"
+              >
+                {" "}
+                (http://publicationethics.org/files/u7140/Peer%20review%20guidelines.pdf)
+              </Link>
 
               <p>
                 If BJMSR’s Editor has invited you to review a manuscript, please
@@ -84,51 +90,37 @@ const Reviewprocess = () => {
                 </li>
               </ol>
 
-              <p className="mt-20">What should be checked while reviewing a manuscript?</p>
+              <p className="mt-20">
+                What should be checked while reviewing a manuscript?
+              </p>
               <ol className="list-disc">
-                <li>
-                Novelty;
-                </li>
+                <li>Novelty;</li>
 
-                <li>
-                  oroginality
-                </li>
+                <li>oroginality</li>
 
-                <li>scientific reliabilty
-                </li>
+                <li>scientific reliabilty</li>
 
-                <li>
-                A valuable contribution to science;
-                </li>
+                <li>A valuable contribution to science;</li>
 
-                <li>
-                Adding new aspects to the existed field of study;
-                </li>
+                <li>Adding new aspects to the existed field of study;</li>
 
                 <li>Reporting possible research misconducts;</li>
 
-                <li>
-                Ethical aspects;
-                </li>
-
-                <li>Structure of the article submitted and its relevance to authors’ guidelines;</li>
+                <li>Ethical aspects;</li>
 
                 <li>
-                References provided to substantiate the content;
+                  Structure of the article submitted and its relevance to
+                  authors’ guidelines;
                 </li>
 
-                <li>
-                Grammar, punctuation, and spelling;
-                </li>
+                <li>References provided to substantiate the content;</li>
 
-                <li>
-                Scientific misconduct.
-                </li>
+                <li>Grammar, punctuation, and spelling;</li>
+
+                <li>Scientific misconduct.</li>
               </ol>
 
-
-              <p className="mt-20">The detailed Journal peer review process is based on the following chart:</p> 
-              <img src="https://i.ibb.co/QH8LqRX/edprocesslarge.png" alt="" />
+              {/* <img src="https://i.ibb.co/QH8LqRX/edprocesslarge.png" alt="" /> */}
             </div>
           </div>
           {/* links */}
