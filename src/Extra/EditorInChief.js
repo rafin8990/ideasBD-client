@@ -3,8 +3,8 @@ import React from "react";
 const EditorInChief = () => {
   return (
     <div>
-      <div>
-        <h3 className="text-3xl mt-20 text-center">
+      <div className="pb-5">
+        <h3 className="text-3xl mt-20 text-center font">
           Note from the Editor-in-Chief
         </h3>
         <p className="m-5 mx-auto">
@@ -44,6 +44,15 @@ const EditorInChief = () => {
           the journal.
         </p>
       </div>
+      <p>
+        welcome your submissions, as well as feedback as authors, readers, and
+        reviewers of the journal. We welcome your submission of your original
+        research. Please send them to –
+        <br /> ideas.bangladesh@gmail.com <br /> rahmanmmahbub27@gmail.com{" "}
+        <br />
+        Best wishes and thank you in advance for your contribution to the
+        Journal of Institute of Advanced Studies.
+      </p>
     </div>
   );
 };

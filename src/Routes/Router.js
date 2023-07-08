@@ -12,6 +12,15 @@ import Volume5 from "../Pages/Volume5/Volume5";
 import Volume6 from "../Pages/Volume6/Volume6";
 import Volume7 from "../Pages/Volume7/Volume7";
 import Volume8 from "../Pages/Volume8/Volume8";
+import Excutive from "../Pages/Excutive/Excutive";
+import Volume1 from "../Pages/Volume1/Volume1";
+import Volume2 from "../Pages/Volume2/Volume2";
+import Volume3 from "../Pages/Volume3/Volume3";
+import Volume4 from "../Pages/Volume4/Volume4";
+import Volume9 from "../Pages/Volume9/Volume9";
+import Volume10 from "../Pages/Volume10/Volume10";
+import Volume11 from "../Pages/Volume11/Volume11";
+import Volume12 from "../Pages/Volume12/Volume12";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +56,22 @@ export const router = createBrowserRouter([
         element: <Profile></Profile>,
       },
       {
+        path: "/volume1",
+        element: <Volume1></Volume1>,
+      },
+      {
+        path: "/volume2",
+        element: <Volume2></Volume2>,
+      },
+      {
+        path: "/volume3",
+        element: <Volume3></Volume3>,
+      },
+      {
+        path: "/volume4",
+        element: <Volume4></Volume4>,
+      },
+      {
         path: "/volume5",
         element: <Volume5></Volume5>,
       },
@@ -61,6 +86,26 @@ export const router = createBrowserRouter([
       {
         path: "/volume8",
         element: <Volume8></Volume8>,
+      },
+      {
+        path: "/volume9",
+        element: <Volume9></Volume9>,
+      },
+      {
+        path: "/volume10",
+        element: <Volume10></Volume10>,
+      },
+      {
+        path: "/volume11",
+        element: <Volume11></Volume11>,
+      },
+      {
+        path: "/volume12",
+        element: <Volume12></Volume12>,
+      },
+      {
+        path: "/excutive",
+        element: <Excutive></Excutive>,
       },
     ],
   },

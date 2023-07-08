@@ -1,6 +1,6 @@
 import React from "react";
 import AdvisoryBoard from "../../Extra/AdvisoryBoard";
-import volume8 from "../../Assets/8. Locating the Representation of the “Feminine Other” 1970s – 1980s’ Popular Bangla Movie Songs as Gendered Discourses - Jarin Tasneem Shoilee.pdf";
+import volume8 from "../../Assets/IDEAS Vol. 8 Full version.pdf";
 
 const Volume8 = () => {
   return (
@@ -44,11 +44,23 @@ const Volume8 = () => {
       <div>
         <AdvisoryBoard></AdvisoryBoard>
       </div>
+      <div>
+        <h1 className="text-4xl font-bold font text-center underline">
+          Assistant Editor
+        </h1>
+        <h3 className="text-2xl font-bold text-center">Dr. K. Sankar</h3>
+        <p className="text-center">Assistant Professor</p>
+        <p className="text-center">N.G.P. Arts and Science College</p>
+        <p className="text-center">Coimbatore, TN, India</p>
+      </div>
+      <div className="mt-5">
+        <h3 className="text-2xl font-bold text-center">Md. Mehidi Hassan</h3>
+        <p className="text-center">Assistant Professor</p>
+        <p className="text-center">GED</p>
+        <p className="text-center">City University , Bangladesh</p>
+      </div>
       <div className="flex justify-center my-10">
-        <a
-          href={volume8}
-          download="8. Locating the Representation of the “Feminine Other” 1970s – 1980s’ Popular Bangla Movie Songs as Gendered Discourses - Jarin Tasneem Shoilee.pdf"
-        >
+        <a href={volume8} download="IDEAS Vol. 8 Full version.pdf">
           {" "}
           <button className="mt-5 btn bg-[#800000] text-white hover:bg-[#800000]">
             Download full Volume in PDF

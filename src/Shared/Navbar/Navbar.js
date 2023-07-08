@@ -8,13 +8,14 @@ const Navbar = () => {
       {/* img  */}
       <div className="bg-[#800000] text-white text-left sm:text-center max-w-[1500px] mx-auto md:text-left  md:px-20 pt-10 lg:py-20 pb-2 flex">
         <img
-          className="h-16 ms-10 lg:h-32 mr-10 lg:mr-0"
-          src="https://i.ibb.co/Fq9bGw3/355053833-273800408518610-3244941835535842613-n.jpg"
+          className="h-16 ms-10 lg:h-32 lg:w-32 rounded-full mr-10 lg:mr-0"
+          src="https://i.ibb.co/6Hc6Q03/20230708-132718-0000.png"
           alt=""
         />
         <div className="max-w-[1500px]  lg:text-center mx-auto">
           <Link className=" font-semibold  cursor-pointer">
             <p className="text-3xl lg:text-7xl font">I D E A S</p>
+            <p className="my-2">Since 2014</p>
             <p className="lg:text-3xl font">
               International Journal of Literature Arts Science And Culture
             </p>
@@ -31,7 +32,7 @@ const Navbar = () => {
             </Link>
 
             <Link className="hover:underline underline-offset-2 nav_button">
-              Institute of advance studies
+              Institute of advanced studies
             </Link>
             {/* Rahman M Mahbub start  */}
             <div className="dropdown dropdown-hover">
@@ -86,6 +87,38 @@ const Navbar = () => {
               >
                 <li>
                   <Link
+                    to="/volume1"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.1
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume2"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.2
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume4"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.4
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume4"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.4
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/volume5"
                     className="hover:underline underline-offset-2 nav_button mt-2"
                   >
@@ -114,6 +147,38 @@ const Navbar = () => {
                     className="hover:underline underline-offset-2 nav_button mt-2"
                   >
                     Vol.8
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume9"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.9
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume10"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.10
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume11"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.11
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/volume12"
+                    className="hover:underline underline-offset-2 nav_button mt-2"
+                  >
+                    Vol.12
                   </Link>
                 </li>
               </ul>
