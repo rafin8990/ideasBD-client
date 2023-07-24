@@ -18,6 +18,10 @@ const Footer = () => {
         <span className="footer-title">Contact</span>
         <p>Email: ideas.bangladesh@gmail.com</p>
         <p>Cell No of Ideas: +8801878677729</p>
+        <p>Editor-in-chief</p>
+        <p>Associate Editor</p>
+        <p>Executive Editor</p>
+        <p>Assistant Editor </p>
       </div>
       <div>
         <span className="footer-title">Correspondence</span>
@@ -37,7 +41,6 @@ const Footer = () => {
             </Link>
           </span>
           <p className="link link-hover mt-2">
-            <Link to="/excutive">Excutive Editor</Link>
           </p>
         </p>
         <Link>

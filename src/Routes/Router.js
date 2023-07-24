@@ -107,6 +107,9 @@ export const router = createBrowserRouter([
         path: "/excutive",
         element: <Excutive></Excutive>,
       },
+      {
+        path: '/research'
+      }
     ],
   },
   {
