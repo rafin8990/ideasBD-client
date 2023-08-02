@@ -31,7 +31,10 @@ const Navbar = () => {
               Ideas
             </Link>
 
-            <Link className="hover:underline underline-offset-2 nav_button">
+            <Link
+              to="/institute"
+              className="hover:underline underline-offset-2 nav_button"
+            >
               Institute of advanced studies
             </Link>
             {/* Rahman M Mahbub start  */}

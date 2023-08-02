@@ -68,18 +68,18 @@ const BoardOfEditors = () => {
           </p>
         </div>
         <div>
+          <div>
+            <h1 className="text-3xl text-center font-semibold font underline mt-5">
+              Executive Editor
+            </h1>
+          </div>
           <h1 className="text-xl text-center font-semibold font">
             S. M. Sabbih Hossain
           </h1>
           <p className=" text-center">
             Assistant Professor, Department of English <br />
-            City University, Dhaka, Bangladesh &amp;
+            City University, Dhaka, Bangladesh
           </p>
-        </div>
-        <div>
-          <h1 className="text-xl text-center font-semibold font">
-            Executive Editor <br /> Ideas
-          </h1>
         </div>
       </div>
     </div>
