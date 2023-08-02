@@ -40,25 +40,38 @@ const CallforPapers = () => {
       </p>
       <p className="text-xl font-bold">Review Process:</p>
       <p>
+        As per the policy of the IDEAS, each article submitted by the researcher
+        will send to at least two anonymous reviewers for peer-review along with
+        Online Plagiarism Checker.
+      </p>
+      <p>
         All articles will go through a double blind peer review process. The
         editorial board will take final decision regarding acceptance or
         rejection
       </p>
-      <p className="text-xl font-bold">Educational Board:</p>
+      <p className="text-xl font-bold">Editorial Board:</p>
       <p>
         The editorial board of Ideas consists of renowned foreign scholars along
-        with distinguished intellectuals and academicians from ho
+        with distinguished intellectuals and academicians from home and abroad.
       </p>
       <p className="text-xl font-bold">Benefits for author:</p>
       <p>
         Authors of the published papers will receive one specimen.The journal
         will be published as hard copy and be available online on the :{" "}
       </p>
-      <p>
+      <p className="text-blue-600 ">
         {" "}
-        https://deparment-of-english-city-university-bd.vercel.app/ideas &
-        https://juniv.academia.edu/IDEASAJournalofLiteratureArtsandCult
-        ureAResearchJournaloftheInstituteofAdvancedStudies
+        <Link to="https://ideasbdjournal.com/"> Ideas Website</Link> <br />
+        <Link to="https://deparment-of-english-city-university-bd.vercel.app/ideas">
+          {" "}
+          https://deparment-of-english-city-university-bd.vercel.app/ideas
+        </Link>{" "}
+        <br />
+        <Link to="https://juniv.academia.edu/IDEASAJournalofLiteratureArtsandCultureAResearchJournaloftheInstituteofAdvancedStudies">
+          {" "}
+          https://juniv.academia.edu/IDEASAJournalofLiteratureArtsandCultureAResearchJournaloftheInstituteofAdvancedStudies
+        </Link>
+        <br />
       </p>
       <div className="md:flex justify-between mt-5">
         <div>
@@ -73,7 +86,7 @@ const CallforPapers = () => {
           <h1 className="text-4xl underline font">Associate Editor</h1>
           <h3 className="text-xl">Dr. Rahman M. Mahbub</h3>
           <p>
-            Associate Professor & Head <br /> Department of Englis <br /> City
+            Associate Professor & Head <br /> Department of English <br /> City
             University <br /> Dhaka, Bangladesh
           </p>
         </div>

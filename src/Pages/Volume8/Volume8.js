@@ -1,6 +1,7 @@
 import React from "react";
 import AdvisoryBoard from "../../Extra/AdvisoryBoard";
 import volume8 from "../../Assets/IDEAS Vol. 8 Full version.pdf";
+import BoardOfEditors from "../Home/Content/BoardOfEditors";
 
 const Volume8 = () => {
   return (
@@ -17,9 +18,7 @@ const Volume8 = () => {
           IDEAS
         </h1>
         <h3 className="text-2xl text-center font">
-          A Journal of Literature Arts and Culture <br />
-          Volume 8 <br />
-          2022-2023 <br />
+          A Journal of Literature Arts Science and Culture <br />
           ISSN 2413-1814
         </h3>
       </div>
@@ -54,11 +53,13 @@ const Volume8 = () => {
         <p className="text-center">Coimbatore, TN, India</p>
       </div>
       <div className="mt-5">
-        <h3 className="text-2xl font-bold text-center">Md. Mehidi Hassan</h3>
+        <h3 className="text-2xl font-bold text-center">Md. Mehedi Hasan</h3>
         <p className="text-center">Assistant Professor</p>
         <p className="text-center">GED</p>
         <p className="text-center">City University , Bangladesh</p>
       </div>
+
+      <BoardOfEditors></BoardOfEditors>
       <div className="flex justify-center my-10">
         <a href={volume8} download="IDEAS Vol. 8 Full version.pdf">
           {" "}

@@ -21,6 +21,7 @@ import Volume9 from "../Pages/Volume9/Volume9";
 import Volume10 from "../Pages/Volume10/Volume10";
 import Volume11 from "../Pages/Volume11/Volume11";
 import Volume12 from "../Pages/Volume12/Volume12";
+import Institute from "../Pages/instituteOfAdvanceStudies/Institute";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
       {
         path: "aboutthejournal",
         element: <AboutTheJournal></AboutTheJournal>,
+      },
+      {
+        path: "/institute",
+        element: <Institute></Institute>,
       },
       {
         path: "aimsandscopes",
@@ -106,6 +111,9 @@ export const router = createBrowserRouter([
       {
         path: "/excutive",
         element: <Excutive></Excutive>,
+      },
+      {
+        path: "/research",
       },
     ],
   },

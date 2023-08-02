@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="max-w-[1500px]  lg:text-center mx-auto">
           <Link className=" font-semibold  cursor-pointer">
             <p className="text-3xl lg:text-7xl font">I D E A S</p>
-            <p className="my-2">Since 2014</p>
+            <p className="mb-2">Since 2014</p>
             <p className="lg:text-3xl font">
               International Journal of Literature Arts Science And Culture
             </p>
@@ -31,7 +31,10 @@ const Navbar = () => {
               Ideas
             </Link>
 
-            <Link className="hover:underline underline-offset-2 nav_button">
+            <Link
+              to="/institute"
+              className="hover:underline underline-offset-2 nav_button"
+            >
               Institute of advanced studies
             </Link>
             {/* Rahman M Mahbub start  */}

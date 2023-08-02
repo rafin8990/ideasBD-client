@@ -11,7 +11,14 @@ const Content = () => {
     <div className="max-w-[1500px] mx-auto  w-full md:text-left">
       <div className="lg:flex">
         <div className="border">
-          <img src="https://i.ibb.co/W20NzQs/5D-48370.jpg" alt="" />
+          <div className="">
+            <img
+              className="w-full"
+              src="https://i.ibb.co/bB7hnw9/2214748543-086756b2a7-o.jpg"
+              alt=""
+            />
+            <img src="https://i.ibb.co/W20NzQs/5D-48370.jpg" alt="" />
+          </div>
           <CallforPapers></CallforPapers>
           <EditorInChief></EditorInChief>
           <div className="my-5">

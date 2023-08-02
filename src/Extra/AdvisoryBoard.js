@@ -4,9 +4,10 @@ const AdvisoryBoard = () => {
   return (
     <div className="text-center">
       <div>
-        <h3 className="text-3xl mt-20 text-center font font-bold">
+        <h3 className="text-3xl mt-20 text-center font font-bold underline">
           Advisory Board
         </h3>
+        <br/>
         <p className="mb-6">
           <span className="font-bold text-xl">Mr. Hasnat Abdul Hye</span>
           <br /> Scholar and Fiction Writer
